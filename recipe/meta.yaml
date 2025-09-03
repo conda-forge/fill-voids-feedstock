@@ -1,5 +1,5 @@
 {% set name = "fill-voids" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fill_voids-{{ version }}.tar.gz
-  sha256: 63f76f7dbdd8cb5f30ea2841a31624eba4612d91211d6ff74d2317f44d449860
+  sha256: 469f543e4ab236cf11aacef106af8e73c730f2a90f1bfae760dc8de29d4d6634
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
